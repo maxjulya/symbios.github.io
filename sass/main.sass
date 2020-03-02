@@ -1,0 +1,580 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	// overflow-x: hidden
+
+
+	&.ishome
+		.site-header
+			width: 1355px
+			margin: 0 auto
+			height: 100vh
+    	
+
+
+section, header
+	position: relative
+	backgroun-sidze: cover
+	background-position: center
+.top-line
+	padding-top: 5px	
+	position: absolute
+	width: 100%
+	background-color: #F8F8F8
+	z-index: 1
+	height: 58px
+	border-bottom: 8px solid #132E45
+
+.h1
+	text-transform: uppercase
+	font-family: roboto-example, bold
+	font-style: normal
+	font-size: 32px
+	line-height: 37px
+	text-align: center
+	color: #FFFFFF
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+.logo
+	img
+		width: auto
+		height: 40px
+		margin-left: 150px	
+
+.buttons_wrap	
+	position: absolute
+	right: 150px
+	top: 5px
+	font-family: roboto-example, bold
+	font-size: 16px
+	line-height: 19px
+	line-height: 100%
+	vertical-align: top
+	color: #337AB7
+
+.button_cooperation,
+.button_enter,
+.button-order,
+.popup-modal-dismiss
+	box-shadow: 0 3px 2px rgba(0,0,0,0.2)
+	display: inline-block
+	border: 1px solid #337AB7
+	text-decoration: none
+	text-transform: uppercase
+	font-weight: 600
+	border-radius: 7px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	padding: 10px 10px 10px 10px
+	outline: none
+	&:hover
+		text-decoration: none
+		color: #fff
+	&:focus
+		text-decoration: none
+		color: #337AB7	
+	&:hover
+		background-color: lighten(#337AB7, 2%)
+		color: #fff
+		&::after
+			opacity: .42
+		&::after
+			opacity: .22
+
+.button_enter	
+	margin-left: 35px
+
+section
+	background-color: #fff;	
+
+.header-flex
+	display: flex
+	position: relative
+	top: 0
+	height: 100%
+
+.flex-center
+	margin: auto
+
+.header-composition
+	text-align: center
+	position: relative
+	top: -100px	
+	p
+		font-family: roboto-example
+		padding-top: 25px
+		font-style: normal
+		font-weight: bold
+		font-size: 22px
+		line-height: 26px
+		text-align: center
+		color: #FFFFFF
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	color: #fff
+
+.header_footer
+	background-color: #337AB7
+	width: 100%
+	position: absolute
+	bottom: 0
+	left: 0
+	padding-bottom: 38px
+	font-family: roboto-example
+	color: #fff
+	text-transform: uppercase
+	font-style: normal
+	font-weight: bold
+	font-size: 16px
+	&::before
+		content: ''
+		position: absolute
+		width: 50%
+		right: 0
+		height: 100%	
+		background-color: #5D9CD2
+	p
+		padding-top: 32px
+		padding-bottom: 32px
+		display: inline-block
+		line-height: 35px
+
+.section_footer
+	background-color: #337AB7
+	width: 100%
+	padding-bottom: 38px
+	font-family: roboto-example
+	color: #fff
+	text-transform: uppercase
+	font-style: normal
+	font-weight: bold
+	font-size: 16px
+	&::before
+		content: ''
+		position: absolute
+		width: 50%
+		right: 0
+		height: 100%	
+		background-color: #5D9CD2
+	p
+		padding-top: 32px
+		padding-bottom: 32px
+		display: inline-block
+		line-height: 35px
+
+	.left_rectangl_cont
+		position: relative
+
+.footer_line
+	width: 100%
+	position: absolute
+	bottom: 0
+	left: 0
+	background-color: #132E45
+	font-family: roboto-example
+	color: #fff
+	font-style: normal
+	font-size: 14px
+	text-align: center
+	padding-top: 11px
+	padding-bottom: 11px
+
+.section_order
+	height: 120vh
+
+.section_footer
+	position: relative
+
+.section_footer_wrap	
+	background-color: #337AB7
+	width: 100%
+	position: absolute
+	bottom: 0
+	left: 0
+	padding-bottom: 38px
+	font-family: roboto-example
+	color: #fff
+	text-transform: uppercase
+	font-style: normal
+	font-weight: bold
+	font-size: 16px
+	&::before
+		content: ''
+		position: absolute
+		width: 50%
+		right: 0
+		height: 100%	
+		background-color: #5D9CD2
+
+.contact-form
+	padding-top: 70px
+	h4
+		font-size: 18px
+		color: #000000
+		font-weight: 700
+	span
+		font-size: 14px
+		font-family: roboto-example
+		font-style: normal
+		display: inline-block
+		padding-top: 12px
+	input, textarea
+		position: absolute
+		border: 1px solid #777777;
+		border-radius: 3px
+		right: 0
+		width: 450px
+		display: inline-block
+		font-size: 12px
+		color: #f2efef
+		padding: 11px 20px 11px
+		&::-webkit-input-placeholder
+			color: #C4C4C4
+		&::-moz-placeholder
+			color: #C4C4C4
+		&:-ms-input-placeholder
+			color: #C4C4C4
+
+.contact-form
+	input, textarea
+		font-size: 15px
+		color: #286090 !important
+		font-family: roboto-example
+		font-style: normal
+		font-weight: normal
+		text-transform: none
+
+	input.input_selected
+		&::-webkit-input-placeholder
+			color: #000
+			font-size: 14px
+			color: #286090
+			font-family: roboto-example
+			font-style: normal
+			font-weight: normal
+		&::-moz-placeholder
+			color: #000
+			font-size: 14px
+			color: #286090
+			font-family: roboto-example
+			font-style: normal
+			font-weight: normal
+		&:-ms-input-placeholder
+			color: #000
+			font-size: 14px
+			color: #286090
+			font-family: roboto-example
+			font-style: normal
+			font-weight: normal
+
+	textarea
+		height: 100px
+	hr		
+    color: #C4C4C4
+    height: 5px
+    margin-top: 90px
+    width: 900px
+	    
+	label	
+		posiition: relative
+		display: block
+		padding-top: 20px
+
+.picture_wrap
+	display: block
+	position: absolute
+	width: 450px
+	right: 0
+	padding-left: 20px
+	padding-top: 32px
+
+a  
+	text-decoration: none !important
+	color: #286090
+	font-family: roboto-example
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+
+.text-center
+	padding-top: 25px
+	text-align: right
+	position: absolute
+	right: 0
+.caret
+	display: none
+
+#div400
+	width: 400px
+	margin: 0 auto
+	min-height: 50px
+
+.btn,
+.btn-default,
+.dropdown-toggle	
+	width: 400px
+	background-color: #fff !important
+	text-align: left
+	text-transform: uppercase
+	font-family: roboto-example
+	font-style: normal
+	font-weight: bold
+	padding: 10px 20px 10px
+	border-radius: 0px
+	border: none
+	font-size: 16px
+	color: #777777 !important
+	position: relative
+	outline: none
+	text-decoration: none
+	&:hover
+		background-color: #f5f5f5 !important
+		color: #777777
+		outline: none !important
+	&::after
+		border: none
+		content: '\f107'
+		color: #fff
+		font-family: fontawesome
+		position: absolute
+		top: 0
+		right: 18px    
+		font-size: 2em
+		color: #777777
+	&.dropdown-active::after
+		content: '\f106'
+
+.dropdown
+	.dropdown-menu			
+	margin-top: 30px
+	li, ul, a
+		width: 400px !important
+		font-family: roboto-example
+		font-style: normal
+		font-weight: bold
+		padding: 4px 0 4px
+		border-radius: 0
+		font-size: 14px
+		outline: none !important
+		color: #286090 !important
+		box-sizing: border-box
+	li, a	
+		&:hover
+			background-color: transparent !important
+			color: #777777
+			outline: none !important
+
+
+.left_rectangl_cont
+	display: flex
+	justify-content: flex-end
+	svg
+		margin: 49px 30px 31px
+		cursor: pointer
+
+.right_rectangl_cont
+	display: flex
+	justify-content: flex-start
+	svg
+		margin: 52px 30px 31px
+		cursor: pointer
+
+
+/* Стили для неактивного модального окна */
+.modal 
+  background: #fff
+  left: 50%
+  margin: -250px 0 0 -40%
+  position: absolute
+  top: -50%
+  width: 80%
+  border-radius: 5px
+  box-shadow: 0 3px 7px rgba(0,0,0,.25)
+  box-sizing: border-box
+  z-index: 2000
+
+
+/* Активация модального окна в состоянии :target */
+.modal:target 
+  top: 50%
+  transition: all 0.4s ease-in-out
+
+
+.modal header, .modal footer 
+  background: #f7f7f7
+  border-bottom: 1px solid #e7e7e7
+  border-radius: 5px 5px 0 0
+ 
+
+.modal footer 
+  border:none
+  border-top: 1px solid #e7e7e7
+  border-radius: 0 0 5px 5px
+
+
+.modal section, .modal header, .modal footer 
+  padding: 15px
+  z-index: 2000
+
+.modal h2 
+  margin: 0
+
+.modal .btn 
+  float: right
+
+.modalbackground 
+	margin: 0 
+	padding: 0 
+	position: fixed 
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,0.5)
+	z-index: 100
+	opacity: 0
+	pointer-events: none
+
+
+/* при отображении модального окно - именно здесь начинается магия */
+.modalbackground:target 
+  opacity: 1
+  pointer-events: auto
+
+
+/* ширина диалогового окна и его отступы от экрана */
+.modalwindow 
+  width: 100%
+  max-width: 300px
+  margin: 10% auto
+  padding: 2%
+  background: #fff
+  border-radius: 3px
+
+
+/* настройка заголовка */
+.modalwindow h3 
+	padding: 0
+	margin: 0
+
+
+/* оформление сообщение */
+.modalwindow p 
+	padding: 0
+	margin: 4% 0 8% 0
+
+
+/* вид кнопки ЗАКРЫТЬ */
+.modalwindow a 
+	display: block
+	color: #fff
+	background: #369
+	padding: 2%
+	margin: 0 auto
+	width: 50%
+	border-radius: 3px
+	text-align: center
+	text-decoration: none
+
+
+.white-popup-block 
+  background: #FFF
+  text-align: left
+  max-width: 650px
+  margin: 40px auto
+  position: relative
+
+.white-popup-block
+	box-shadow: 0 10px 10px rgba(0,0,0,0.3)
+	text-align: center
+	width: 550px
+	.uved
+		font-family: roboto-example
+		font-style: normal
+		font-weight: bold
+		display: block
+		padding: 15px 20px 15px 
+		font-size: 18px
+		line-height: 21px
+		font-weight: 500
+		color: #333333
+		background-color: #F8F8F8
+	.vynez
+		font-family: roboto-example
+		font-style: normal
+		font-weight: bold
+		display: block
+		font-weight: 600
+		font-size: 18px
+		line-height: 21px
+		color: #A60000
+		padding: 60px 0
+
+.popup-modal-dismiss
+	padding: 7px 10px 7px 10px
+.modalok	
+	background-color: #F8F8F8
+	display: block
+	padding: 20px 0
+
+/* вид кнопки ЗАКРЫТЬ при наведении на нее мыши */
+.modalwindow a:hover 
+	background: #47a
+
+
+
+
+@import "media" // Всегда в конце
